@@ -15,6 +15,7 @@ def game():
     global Name
     global last_bonus
     global score
+    global lvl
     score = 0
     life = 3
     last_bonus = ""
@@ -281,13 +282,13 @@ def game():
     height = size[1]
     screen = pygame.display.set_mode(size)
     pygame.init()
-    lvl = 2
+    lvl = 1
 
     def new_game():
         # стартовая информация
         global score
         global life
-        lvl = 1
+        global lvl
         life = 3
         score = 0
         fps = 80
